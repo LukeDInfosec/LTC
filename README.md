@@ -1,3 +1,3 @@
-# LTT (Linux Treasure Chest)
+# LTC (Linux Treasure Chest)
 A collection of my personal notes &amp; favourite tools in relation to Linux.
 
