@@ -1,2 +1,3 @@
-# LinuxCache
-A collection of personal notes &amp; tools in relation to Linux.
+# LTT (Linux Treasure Chest)
+A collection of my personal notes &amp; favourite tools in relation to Linux.
+
