@@ -1,0 +1,9 @@
+#!/bin/bash
+filename='iplist.txt' # name of file with IPs to handle
+
+
+for ip in `cat $iplist.txt`
+do
+echo 'Handling reverse DNS for $ip'
+dig -x $ip +short > HostNames.txt
+done

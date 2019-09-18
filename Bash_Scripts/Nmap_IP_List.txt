@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Scans a range of IP's saved in iplist.txt
+#Sends output to results.txt
+#single '>' in output will overwrite one another so use 2.
+
+for ip in $(cat iplist.txt); do nmap  -p 80,443 $ip  >>  results.txt | echo & done
