@@ -1,0 +1,27 @@
+#Uses Powershell ISE on WINDOWS to discover hostnames from a list of IP Addresses.
+
+# Remove -append from the last line, this adds too the list, not overwrite.
+
+$ipdir = "C:\Users\Luke.Dawson\Desktop\IPList.txt"
+
+$outputdir = "C:\Users\Luke.Dawson\Desktop\results.csv"
+
+
+
+$results = Get-Content $ipdir | ForEach-Object {
+
+    $hostname = ([system.net.dns]::GetHostByAddress($_)).hostname
+
+    [PSCustomObject]@{
+
+        IP = $_
+
+        Hostname = $hostname
+
+    }
+
+ }
+
+
+
+ $results | export-csv $outputdir -NoClobber -append
