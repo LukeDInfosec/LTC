@@ -1,5 +1,6 @@
 # Uses Powershell ISE on WINDOWS to discover hostnames from a list of IP Addresses.
 # Remove -append from the last line, this adds too the list, not overwrite.
+# In Powershell ISE Click the script button before pasting
 --------------------------------------------------------------------------------------- 
 
 
