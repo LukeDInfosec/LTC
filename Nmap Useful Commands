@@ -1,7 +1,9 @@
-nmap -p-   = full port scan 
-nmap -Pn   = Don't wait for host ping reply, persume host is up
-nmap -sS   = stealthy scan only complete 2 parts of the handshake
-nmap -sP   = ping only scan, returns no port just host status (Down / Up)
-nmap -open = Show only open ports
-nmap -T0-5  = Choose how aggressive / fast you want the scan e.g nmap -T4
-
+nmap -p-    = full port scan 
+nmap -Pn    = Don't wait for host ping reply, persume host is up
+nmap -sS    = stealthy scan only complete 2 parts of the handshake
+nmap -sP    = ping only scan, returns no port just host status (Down / Up)
+nmap -open  = Show only open ports
+nmap -T4    = How fast you want to implement the scan, T4 is commony used , T5 is very noisy on a network.
+nmap -n     = Do not resolve DNS (DNS resolution is time consuming, use if you don't need to know host name)
+nmap -A     = O/S & Service Version Detection 
+nmap -sC    = Use Safe Scripts
