@@ -7,3 +7,4 @@ nmap -T4    = How fast you want to implement the scan, T4 is commony used , T5 i
 nmap -n     = Do not resolve DNS (DNS resolution is time consuming, use if you don't need to know host name)
 nmap -A     = O/S & Service Version Detection 
 nmap -sC    = Use Safe Scripts
+nmap -sn    = Ping only scan
